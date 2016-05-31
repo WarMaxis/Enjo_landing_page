@@ -1,0 +1,174 @@
+section {
+    padding: 100px 0;
+}
+
+.accented {
+    color: #e79900;
+}
+
+nav ul.nav img {
+    height: 20px;
+}
+
+.intro-block .container {
+    padding: 160px 0 80px 0;
+}
+
+header .container .enjo-main-button-section > img {
+    margin-top: 50px;
+}
+
+.enjo-venue-button {
+    padding: 0;
+}
+
+.enjo-venue-button .title {
+    background-color: #e79900;
+    padding: 40px 0px 40px 0px;
+}
+
+.enjo-main-section {
+    margin-left: 40%;
+}
+
+.enjo-main-section h1.slogan {
+    margin-bottom: 30px;
+}
+
+.enjo-main-section h1.slogan span {
+    display: block;
+}
+
+.enjo-main-section h1.slogan span.accented{
+    display: inline;
+}
+
+.enjo-main-button-section {
+    text-align: center;
+    padding-right: 20%;
+}
+
+.enjo-main-button-section a {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.enjo-phone-video {
+    width: 289px;
+    height: 550px;
+    background-image: url(../images/NexusFilm.png);
+}
+
+.enjo-arrow-animation {
+    visibility: visible;
+    position: absolute;
+    top: 8%;
+    right: 5%;
+}
+
+.enjo-arrow-animation img {
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+}
+
+.enjo-what-changed strong {
+    font-size: 24px;
+}
+
+.enjo-what-changed ul li {
+    text-align: center;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.enjo-what-changed ul li img {
+    margin-bottom: 10px;
+}
+
+.enjo-what-changed ul li p span {
+    display: block;
+}
+
+.enjo-venue-smartphone {
+    padding-top: 70px;
+}
+
+@media all and (max-width: 992px) {
+    .enjo-main-section {
+        margin-left: 0;
+    }
+
+    .enjo-main-button-section {
+        padding-right: 0;
+    }
+}
+
+@media all and  (max-width: 767px) {
+    .enjo-arrow-animation {
+        display: none;
+    }
+
+    .enjo-phone-video {
+        margin: auto;
+    }
+
+}
+
+@media all and (min-width: 1640px) {
+    .intro-screen {
+        right: 160px !important;
+    }
+}
+
+.arrow {
+  margin-top: 50px;
+}
+
+.bounce2 {
+	-webkit-animation-name: bounce;
+	-moz-animation-name: bounce;
+	-o-animation-name: bounce;
+	animation-name: bounce;
+}
+.animated2 {-webkit-animation-fill-mode:both;
+-moz-animation-fill-mode:both;
+-ms-animation-fill-mode:both;
+-o-animation-fill-mode:both;
+
+            animation-iteration-count: infinite;
+       -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
+animation-fill-mode:both;
+-webkit-animation-duration:2s;
+-moz-animation-duration:2s;
+-ms-animation-duration:2s;
+-o-animation-duration:2s;
+animation-duration:2s;
+}
+
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
