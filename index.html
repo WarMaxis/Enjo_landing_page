@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<title>Enjo</title>
+<meta charset="utf-8">
+<meta name="keywords" content="enjo, aplikacja, mobilna, aplikacja mobilna, gastronomia, nowe technologie, uberyzacja">
+<meta name="description" content="Enjo sprowadza świat gastronomii do poziomu smartfona. To zupełnie nowy kanał komunikacji między lokalami i ich klientami. Jeszcze nigdy nie było tak łatwo! Znajdź lokal, wybierz swoje ulubione danie, zamów i zapłać poprzez smartphona a następnie przyjdź na gotowe, bez kolejek, bez czekania. Brzmi super?">
+<meta name="author" content="Michał Milanowski">
+<!-- Facebook OGP Tags	-->
+<meta property="og:title" content="Enjo">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/tloFB.jpg">
+<meta property="og:site_name" content="Enjo">
+<meta property="og:description" content="Znajdź lokal, wybierz swoje ulubione danie, zamów i zapłać poprzez smartphona a następnie przyjdź na gotowe, bez kolejek, bez czekania. Brzmi super?">
+<!-- Mobile Specific -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+<!--[if lt IE 9]>
+<script type="text/javascript" src="scripts/html5shiv.js"></script>
+<![endif]-->
+<!-- CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/simple-line-icons.css">
+<link rel="stylesheet" href="css/icomoon-soc-icons.css">
+<link rel="stylesheet" href="css/style-dark.css">
+<link rel="stylesheet" href="css/style-orange.css">
+<link rel="stylesheet" href="css/enjo.css">
+<!-- Favicons -->
+<link rel="icon" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+</head>
+<body data-spy="scroll" data-target=".navMenuCollapse">
+<!-- PRELOADER -->
+<div id="preloader">
+    <div class="battery inner">
+        <div class="load-line"></div>
+    </div>
+</div>
+<div id="wrap"></div>
+<!-- NAVIGATION BEGIN -->
+<nav class="navbar navbar-fixed-top navbar-slide">
+	<div class="container_fluid">
+		<a class="navbar-brand goto" href="index.html#wrap"><img src="images/logo_small.png" alt="enjo logo" height="40" width="66"></a>
+		<button class="navbar-toggle menu-collapse-btn collapsed" data-toggle="collapse" data-target=".navMenuCollapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+		<div class="collapse navbar-collapse navMenuCollapse">
+			<ul class="nav">
+				<li><a href="#oenjo">O ENJO</a></li>
+				<li><a href="#korzysci">KORZYŚCI</a></li>
+				<li><a href="#dlalokali">DLA LOKALI</a></li>
+				<li><a href="#kontakt">KONTAKT</a></li>
+				<li><a class="soc-icon-facebook" target="_blank" href="https://www.facebook.com/enjoapp/"></a></li>
+				<li><a class="soc-icon-twitter" target="_blank" href="https://twitter.com/enjo_app/"></a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- NAVIGAION END -->
+<!-- INTRO BEGIN -->
+<header id="full-intro" class="intro-block bg-color-main">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 hidden-sm hidden-xs">
+				<img class="intro-screen wow fadeInLeftBig" data-wow-delay="0.5s" src="images/iPhonereka.png" width="612" height="675" alt="iPhone ręka">
+			</div>
+			<div class="col-md-8 col-sm-12 enjo-main-section">
+				<h1 class="slogan">
+					<span>Wiemy jak cenny dla Ciebie jest</span>
+					<span>Twój wolny czas.</span>
+					<span>Ze znajomymi czy sam, ciesz się</span>
+					<span>nim jeszcze bardziej dzięki <span class="accented">enjo</span>.</span>
+				</h1>
+				<div class="enjo-main-button-section">
+					<div style="width: 300px; padding-top: 20px; margin: 0 auto;">
+						<a class="download-btn win-btn" href="" data-toggle="modal" data-target="#modalContact">
+							<div class="btn-slide"></div>
+							<div class="btn-content">
+								<div style="float: left;">
+									<img src="images/mysz.png" height="40" width="30" alt="mysz-icon">
+									</div>
+									<div style="color: white; padding-right: 25px;">kliknij aby<b>DOŁĄCZYĆ!</b></div>
+								</div>
+							</a>
+						</div>
+                        <div class="arrow animated2 bounce2">
+							<a id='svg_arrow' href="#oenjo"><img width="40" height="40" alt="" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyDQoJbDE4OS45OTktMTkwYzIwLjE3OC0yMC4xNzgsNTMuMTY0LTE5LjkxMyw3My42NzIsMC41OTVsMCwwYzIwLjUwOCwyMC41MDksMjAuNzcyLDUzLjQ5MiwwLjU5NSw3My42NzFMMjkzLjc1MSw0NTUuODY4eiIvPg0KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTIyMC4yNDksNDU1Ljg2OGMyMC4xOCwyMC4xNzksNTMuMTY0LDE5LjkxMyw3My42NzItMC41OTVsMCwwYzIwLjUwOS0yMC41MDgsMjAuNzc0LTUzLjQ5MywwLjU5Ni03My42NzINCglsLTE5MC0xOTBjLTIwLjE3OC0yMC4xNzgtNTMuMTY0LTE5LjkxMy03My42NzEsMC41OTVsMCwwYy0yMC41MDgsMjAuNTA5LTIwLjc3Miw1My40OTItMC41OTUsNzMuNjcxTDIyMC4yNDksNDU1Ljg2OHoiLz4NCjwvc3ZnPg0K">
+							</a>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="slides" data-stellar-ratio="0.4">
+			<div class="slides-container"><img src="images/slider1.jpg" alt="slider1"><img src="images/slider2.jpg" alt="slider2"><img src="images/slider3.jpg" alt="slider3"><img src="images/slider4.jpg" alt="slider4"></div>
+	</div>
+    </header>
+<!-- INTRO END -->
+<!-- O ENJO BEGIN -->
+    <section id="oenjo" class="img-block-3col bg-color1">
+        <div class="container">
+            <div class="title">
+                <h2>czym jest enjo?</h2>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-sm-6">
+                    <ul class="item-list-left">
+                        <li data-animation="fadeInLeft" data-wow-delay="s" class="wow fadeInLeft animated"
+                            style="visibility: visible;-webkit-animation-delay: s; -moz-animation-delay: s; animation-delay: s;">
+                            <i class="icon color icon-bulb"></i>
+                            <h3 class="color">Nowe rozwiązanie</h3>
+                            <p  style="margin-bottom: 60px;">Enjo sprowadza świat gastronomii do poziomu smartfona.<br>To zupełnie nowy kanał komunikacji między lokalami i ich klientami. Jeszcze nigdy nie było tak łatwo!</p>
+                        </li>
+                        <li data-animation="fadeInLeft" data-wow-delay="s" class="wow fadeInLeft animated"
+                            style="visibility: visible;-webkit-animation-delay: s; -moz-animation-delay: s; animation-delay: s;">
+                            <i class="icon color icon-users"></i>
+                            <h3 class="color">Społeczność</h3>
+                            <p  style="margin-bottom: 60px;">Enjo to nie tylko aplikacja. To społeczność ludzi pragnących czerpać więcej przyjemności z wolnego czasu oraz bary<br>i restauracje chcące wyjść naprzeciw ich oczekiwaniom!</p>
+                        </li>
+                        <li data-animation="fadeInLeft" data-wow-delay="s" class="wow fadeInLeft animated"
+                            style="visibility: visible;-webkit-animation-delay: s; -moz-animation-delay: s; animation-delay: s;">
+                            <i class="icon color icon-present"></i>
+                            <h3 class="color">Darmowe narzędzie</h3>
+                            <p style="margin-bottom: 60px;">Enjo umożliwia Ci tak wiele, nie oczekując ani złotówki w zamian. Wierzymy, że te udogodnienia należą się wszystkim bez żadnych opłat!</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="animation-box wow swing animated animated enjo-arrow-animation" data-animation="swing">
+                    <img src="images/strzalka.png" width="200" height="111" alt="Strzałka">
+                </div>
+                <div class="col-md-5 col-md-offset-1 col-sm-6 enjo-phone-video">
+                    <iframe src="https://player.vimeo.com/video/152874042?loop=1&amp;color=e79900&amp;title=0&amp;byline=0&amp;portrait=0"
+                            style="width: 262px; height: 467px; margin-top: 45px; margin-left: -1px"
+                            frameborder="0"></iframe>
+                </div>
+            </div>
+			<div style="margin-top: 40px;">
+				<font style="display: block; margin-bottom: 30px;" color="e79900"><strong>Wkrótce na</strong></font>
+					<img src="images/ikonkiplatform2.png" width="300" height="75" alt="platformy">
+			</div>
+		</div>
+	</section>
+<!-- O ENJO END -->
+<!-- KORZYŚCI BEGIN -->
+    <section id="korzysci" class="img-block-3col bg-color2">
+        <div class="container">
+            <div class="title">
+                <h2>co się zmieni?</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 enjo-what-changed">
+                    <strong class="accented">Czy kiedykolwiek...</strong>
+                    <ul class="item-list-right item-list-big">
+                        <li class="wow fadeInLeft">
+                            <img src="images/ikonka2.png" width="70" height="70" style="float:up">
+                            <p>
+                                <span>czekałeś wieki na obsługę lub</span>
+                                <span>zamówienie?</span>
+                            </p>
+                        </li>
+                        <li class="wow fadeInLeft">
+                            <img src="images/ikonka3.png" width="70" height="70" style="float:up">
+                            <p>
+                                <span>denerwowało Cię rozliczanie</span>
+                                <span>rachunków zbiorowych?</span></p>
+                        </li>
+						<li class="wow fadeInLeft">
+                            <img src="images/ikonka1.png" width="98" height="70" style="float:up">
+                            <p>
+                                <span>marnowałeś czas szukając wolnego</span>
+                                <span>stolika w lokalach?</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-sm-push-4 enjo-what-changed">
+                    <strong class="accented">Z enjo...</strong>
+                    <ul class="item-list-left item-list-big">
+                        <li class="wow fadeInRight">
+                            <img src="images/ikonka5.png" width="90" height="70" style="float:up">
+                            <p>
+                                <span>zamówisz z wyprzedzeniem</span>
+                                <span>i przyjedziesz na gotowe!</span>
+                            </p>
+                        </li>
+                        <li class="wow fadeInRight">
+                            <img src="images/ikonka6.png" width="75" height="70" style="float:up">
+                            <p>
+                                <span>szybko i samodzielnie zapłacisz</span>
+                                <span>za swoje zamówienie!</span>
+                            </p>
+                        </li>
+						<li class="wow fadeInRight">
+                            <img src="images/ikonka4.png" width="103" height="70" style="float:up">
+                            <p>
+                                <span>wygodnie zarezerwujesz stolik</span>
+                                <span>w pobliskim lokalu!</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-sm-pull-4">
+                    <div class="animation-box wow bounceIn">
+                        <img class="highlight-left wow" src="images/light.png" height="192" width="48">
+                        <img class="highlight-right wow" src="images/light.png" height="192" width="48">
+                        <img class="screen" src="images/iPhoneKorzysci.png" alt="iPhone korzyści" height="700"
+                             width="245">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- KORZYŚCI END -->
+<!-- DLA LOKALI BEGIN -->
+    <section id="dlalokali" class="bg-color1">
+        <div class="container">
+            <div class="title">
+                <h2>masz lokal?</h2>
+                <p>Świat się rozwija, a z nim potrzeby i wymagania klientów. Razem dopasujmy się do nich.<br>I wszyscy
+                    będą
+                    zadowoleni :-)</p>
+            </div>
+            <div style="margin-bottom: 40px;" class="span4 col-sm-4 column_first">
+                <div class="animation-box wow fadeInLeft animated animated" data-animation="fadeInLeft"
+                     data-wow-delay="s"
+                     style="visibility: visible;-webkit-animation-delay: s; -moz-animation-delay: s; animation-delay: s;">
+                    <img src="images/ikonkalokal1.png" height="80" width="80"><font style="display: block; margin-top: 20px;" size="5" color="e79900">POPRAW
+                        OBSŁUGĘ KLIENTA</font>zwiększając jej szybkość i niezawodność
+                </div>
+            </div>
+            <div style="margin-bottom: 40px;" class="span4 col-sm-4">
+                <div class="animation-box wow fadeInUp animated animated" data-animation="fadeInUp" data-wow-delay="s"
+                     style="visibility: visible;-webkit-animation-delay: s; -moz-animation-delay: s; animation-delay: s;">
+                    <img src="images/ikonkalokal2.png" height="80" width="80"><font style="display: block; margin-top: 20px;" size="5" color="e79900">ZWIĘKSZ
+                        SPRZEDAŻ</font>zwiększając liczbę klientów i rotację stolików
+                </div>
+            </div>
+
+            <div style="margin-bottom: 40px;" class="span4 col-sm-4 column_last">
+                <div class="animation-box wow fadeInRight animated animated" data-animation="fadeInRight"
+                     data-wow-delay="s"
+                     style="visibility: visible;-webkit-animation-delay: s; -moz-animation-delay: s; animation-delay: s;">
+                    <img src="images/ikonkalokal3.png" height="80" width="80"><font style="display: block; margin-top: 20px;" size="5" color="e79900">WYPROMUJ
+                        SWÓJ LOKAL</font>traf do szerszego grona odbiorców
+                </div>
+            </div>
+            <div>
+                <img class="screen wow bounceInUp enjo-venue-smartphone" src="images/NexusLokale.png" height="514" width="700"
+                     alt="Nexus lokal">
+            </div>
+        </div>
+    </section>
+<!-- DLA LOKALI END -->
+    <section class="enjo-venue-button">
+        <div style="margin-bottom: 20px;"><strong>Zainteresowany?</strong></div>
+	<div class="title">
+			<div style="width: 300px; margin: 0 auto;">
+            	<a href="" data-toggle="modal" data-target="#modalContact2"><img src="images/buttonlokale2.png" width="300" height="66" onmouseover="this.src = 'images/buttonlokale3.png'" onmouseout="this.src = 'images/buttonlokale2.png'"></a>
+			</div>
+        </div>
+    </section>
+<!-- KONTAKT BEGIN -->
+    <section id="kontakt" class="bg-color2">
+        <div class="container-fluid">
+            <div class="title">
+                <h2>bądźmy w kontakcie!</h2>
+                <p>Obserwuj nas w mediach społecznościowych. Napisz wiadomość, jeśli masz pytanie.<br>Po prostu bądźmy w
+                    kontakcie! :-)<br><br>
+                    <strong><a href="mailto:hello@enjo.io" style="color: orange;" onmouseover="this.style.color='black'"
+                               onmouseout="this.style.color='orange';">hello@enjo.io</a></strong></p>
+            </div>
+            <ul class="soc-list wow flipInX">
+                <li><a target="_blank" href="https://www.facebook.com/enjoapp/"><i class="icon soc-icon-facebook"></i></a></li>
+                <li><a target="_blank" href="https://twitter.com/enjo_app/"><i class="icon soc-icon-twitter"></i></a></li>
+            </ul>
+        </div>
+    </section>
+<!-- KONTAKT END -->
+<!-- DOWNLOAD BEGIN -->
+    <section id="download" class="bg-color-main">
+        <div class="container-fluid wow fadeInDown">
+            <a target="_blank" href="https://www.facebook.com/enjoapp/" class="goto">
+                <h2>enjo pojawi się wiosną 2016</h2>
+            </a>
+        </div>
+        <div class="block-bg" data-stellar-ratio="0.5"></div>
+    </section>
+<!-- DOWNLOAD END -->
+<!-- FOOTER BEGIN -->
+    <footer id="footer">
+        <div class="container">
+            <a href="index.html#wrap" class="logo goto"><img src="./images/logo_small.png" alt="enjo logo" height="40" width="66"></a>
+            <p class="copyright"><strong>&copy; 2016 enjo</strong></p>
+        </div>
+    </footer>
+<!-- FOOTER END -->
+<!-- MODALS BEGIN -->
+<!-- formularz dla klientów -->
+    <div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<!-- Begin MailChimp Signup Form -->
+<link href="css/mailchimp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+</style>
+<div id="mc_embed_signup">
+<form action="//enjo.us12.list-manage.com/subscribe/post?u=96dc66ab5d3c102a966736055&amp;id=ebd0e7f27f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<div><center><img src="images/logomailchimp.png" alt="enjo logo" height="40" width="66"></center></div>
+<div id="mc_embed_signup_scroll">
+	<center><h2><font color="e79900">Zostaw nam swojego e-maila aby wiedzieć,<br>kiedy enjo będzie gotowe :-)</font></h2></center>
+<div class="indicates-required"><span class="asterisk">*</span> pola wymagane</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Adres e-mail  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-IMIE">Imię  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="IMIE" class="required" id="mce-IMIE">
+</div>
+<div class="mc-field-group">
+	<label for="mce-MIASTO">Miasto  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="MIASTO" class="required" id="mce-MIASTO">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_96dc66ab5d3c102a966736055_ebd0e7f27f" tabindex="-1" value=""></div>
+    <div class="clear"><center><input type="submit" value="Dołącz" name="subscribe" id="mc-embedded-subscribe" class="button"></center></div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='IMIE';ftypes[1]='text';fnames[2]='MIASTO';ftypes[2]='text'; /*
+ * Translated default messages for the $ validation plugin.
+ * Locale: PL
+ */
+$.extend($.validator.messages, {
+	required: "To pole jest wymagane.",
+	remote: "Proszę o wypełnienie tego pola.",
+	email: "Proszę o podanie prawidłowego adresu email.",
+	url: "Proszę o podanie prawidłowego URL.",
+	date: "Proszę o podanie prawidłowej daty.",
+	dateISO: "Proszę o podanie prawidłowej daty (ISO).",
+	number: "Proszę o podanie prawidłowej liczby.",
+	digits: "Proszę o podanie samych cyfr.",
+	creditcard: "Proszę o podanie prawidłowej karty kredytowej.",
+	equalTo: "Proszę o podanie tej samej wartości ponownie.",
+	accept: "Proszę o podanie wartości z prawidłowym rozszerzeniem.",
+	maxlength: $.validator.format("Proszę o podanie nie więcej niż {0} znaków."),
+	minlength: $.validator.format("Proszę o podanie przynajmniej {0} znaków."),
+	rangelength: $.validator.format("Proszę o podanie wartości o długości od {0} do {1} znaków."),
+	range: $.validator.format("Proszę o podanie wartości z przedziału od {0} do {1}."),
+	max: $.validator.format("Proszę o podanie wartości mniejszej bądź równej {0}."),
+	min: $.validator.format("Proszę o podanie wartości większej bądź równej {0}.")
+});}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+            </div>
+        </div>
+    </div>
+<!-- formularz dla lokali -->
+    <div class="modal fade" id="modalContact2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+<!-- Begin MailChimp Signup Form -->
+<link href="css/mailchimp.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+	#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+</style>
+<div id="mc_embed_signup">
+<form action="//enjo.us12.list-manage.com/subscribe/post?u=96dc66ab5d3c102a966736055&amp;id=1d50fd1d7c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<div><center><img src="images/logomailchimp.png" alt="enjo logo" height="40" width="66"></center></div>
+<div id="mc_embed_signup_scroll">
+	<center><h2><font color="e79900">Wpisz poniższe dane w celu otrzymania szczegółowej oferty</font></h2></center>
+<div class="indicates-required"><span class="asterisk">*</span> pola wymagane</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Adres e-mail  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-LOKAL">Nazwa lokalu  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="LOKAL" class="required" id="mce-LOKAL">
+</div>
+<div class="mc-field-group">
+	<label for="mce-MIASTO">Miasto  <span class="asterisk">*</span>
+</label>
+	<input type="text" value="" name="MIASTO" class="required" id="mce-MIASTO">
+</div>
+	<div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_96dc66ab5d3c102a966736055_1d50fd1d7c" tabindex="-1" value=""></div>
+    <div class="clear"><center><input type="submit" value="Jestem zainteresowany" name="subscribe" id="mc-embedded-subscribe" class="button"></center></div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='LOKAL';ftypes[1]='text';fnames[2]='MIASTO';ftypes[2]='text'; /*
+ * Translated default messages for the $ validation plugin.
+ * Locale: PL
+ */
+$.extend($.validator.messages, {
+	required: "To pole jest wymagane.",
+	remote: "Proszę o wypełnienie tego pola.",
+	email: "Proszę o podanie prawidłowego adresu email.",
+	url: "Proszę o podanie prawidłowego URL.",
+	date: "Proszę o podanie prawidłowej daty.",
+	dateISO: "Proszę o podanie prawidłowej daty (ISO).",
+	number: "Proszę o podanie prawidłowej liczby.",
+	digits: "Proszę o podanie samych cyfr.",
+	creditcard: "Proszę o podanie prawidłowej karty kredytowej.",
+	equalTo: "Proszę o podanie tej samej wartości ponownie.",
+	accept: "Proszę o podanie wartości z prawidłowym rozszerzeniem.",
+	maxlength: $.validator.format("Proszę o podanie nie więcej niż {0} znaków."),
+	minlength: $.validator.format("Proszę o podanie przynajmniej {0} znaków."),
+	rangelength: $.validator.format("Proszę o podanie wartości o długości od {0} do {1} znaków."),
+	range: $.validator.format("Proszę o podanie wartości z przedziału od {0} do {1}."),
+	max: $.validator.format("Proszę o podanie wartości mniejszej bądź równej {0}."),
+	min: $.validator.format("Proszę o podanie wartości większej bądź równej {0}.")
+});}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+            </div>
+        </div>
+    </div>
+<!-- MODALS END -->
+<!-- JavaScript -->
+<script src="scripts/jquery-1.8.2.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/wow.min.js"></script>
+<script src="scripts/smoothscroll.js"></script>
+<script src="scripts/jquery.smooth-scroll.min.js"></script>
+<script src="scripts/placeholders.jquery.min.js"></script>
+<script src="scripts/jquery.stellar.min.js"></script>
+<script src="scripts/retina.min.js"></script>
+<script src="scripts/custom.js"></script>
+<script src="scripts/enjo.js"></script>
+<script src="scripts/jquery.superslides.min.js"></script>
+<!--[if lte IE 9]>
+<script src="scripts/respond.min.js"></script>
+<![endif]-->
+</body>
+</html>
