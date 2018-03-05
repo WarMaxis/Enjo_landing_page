@@ -1,4 +1,4 @@
-# Enjo Landing Page
+# Enjo landing page
 Landing Page for start-up Enjo. Designed and developed by Michał Milanowski.<br>
 Check this on http://enjomichal.azurewebsites.net/<br>
 __One of the first website that I have ever made :-)__<br>
